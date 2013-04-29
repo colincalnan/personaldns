@@ -1,0 +1,1 @@
+*/1 * * * * bash ~/Dropbox/Personal/IPs/writeiptodropbox.sh
