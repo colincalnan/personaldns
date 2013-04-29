@@ -9,10 +9,11 @@ How does it work?
 -----------------
 All that's required are two files and little bit of command link knowledge on OSX.
 
-1. writeiptodropbox.sh
-	This is a simple shell script that gets the IP address of the machine that it runs on. It requests http://wtfismyip.com/text which returns your IP. It then writes that IP address into a file in the Public folder of your dropbox, using the current machine/computer name for the file name (yourmachine.local.txt). You can write it to anywhere, but you will want to access this file later, so it must be world readable, which is why the public folder seems like the best place.
-2. crontab.txt
-	This is the crontab entry that you use to schedule the writing of the above file. It needs to update regulary as my ISP is constantly changing my IP. It simply tells your machine to call the above file at set intervals. In this case every 1 minute "/1"
+### 1. writeiptodropbox.sh
+This is a simple shell script that gets the IP address of the machine that it runs on. It requests http://wtfismyip.com/text which returns your IP. It then writes that IP address into a file in the Public folder of your dropbox, using the current machine/computer name for the file name (yourmachine.local.txt). You can write it to anywhere, but you will want to access this file later, so it must be world readable, which is why the public folder seems like the best place.
+
+### 2. crontab.txt
+This is the crontab entry that you use to schedule the writing of the above file. It needs to update regulary as my ISP is constantly changing my IP. It simply tells your machine to call the above file at set intervals. In this case every 1 minute "/1"
 
 Setting up domains
 ------------------
