@@ -1,1 +1,1 @@
-/usr/local/bin/wget -q -O - http://colincalnan.com/calnan.php > ~/Dropbox/Public/IPs/$(hostname).txt
+/usr/local/bin/wget -q -O - http://wtfismyip.com/text > ~/Dropbox/Public/IPs/$(hostname).txt
